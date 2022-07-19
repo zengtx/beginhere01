@@ -1,0 +1,208 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    border: 1px solid red;
+} */
+
+/* 样式 */
+body{
+   margin: 0 auto;
+   /* background-color: #eee; */
+   background-image:url(/images/simon-lee-XX5RQgTuD8o-unsplash.jpg);
+   background-repeat :no-repeat;
+   /* 固定背景图片不随鼠标滚动下滑 */
+   background-attachment: fixed;
+   /* background-position: center; */
+   background-size: 100vw;
+   /* overflow: hidden; */
+
+}
+
+
+.drop- shadow{
+    height: 100%;
+    width: 100%;
+    filter: drop- shadow( 0px 20px 10px rgba(0, 0, 0, 1));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+.logo{
+    margin: 24px;
+    font-size: 3em;
+    font-weight: 600;
+    color: #eee;
+}
+.top{
+    align-items: center;
+    margin: 0px;
+    padding: 80px 0px 20px 0px
+    /* border-bottom: 1px solid grey; */
+}
+
+.search{
+    width: 24em;
+    height: 40px;
+    border: none;
+    /* border: 1px solid #999; */
+    border-radius: 8px 0px 0px 8px;
+    box-shadow: 0px 10px 16px rgba(65,165,255,.3);
+    padding: 0;
+}
+.SearchButton{
+    height: 40px;
+    background-color: #0042ff;
+    color: #eee;
+    /* border: none; */
+    border: 2px solid #eee;
+    border-radius: 0px 8px 8px 0px;
+    padding:4px 16px;
+    box-shadow: 0px 10px 16px rgba(65,165,255,.3);
+    /* 相对定位 控制按钮位置与输入框对齐 */
+    /* position: relative;
+    right:4px;
+    top: 1.5px; */
+}
+.bottom{
+    min-height:32vh;
+    margin: 32px 160px;
+    padding: 16px 24px;
+    border-radius: 16px;
+    /* opacity: 80%; */
+}
+.footer{
+    margin: 0 auto;
+}
+
+/* glass毛玻璃效果 */
+.glass{
+    /* background-image: url(/images/simon-lee-XX5RQgTuD8o-unsplash.jpg);
+    background-repeat :no-repeat;
+    background-position: center; */
+    border: 2px solid  rgba(255,255,255,.3);
+    background-color: rgba(255,255,255,.2);
+    z-index: 1;
+    backdrop-filter: blur(30px);
+    /* background-color: #fff; */
+    box-shadow: 0px 10px 16px rgba(0,0,0,.1);
+}
+
+.left{
+    /* 模拟竖向分割线 */
+    border-right: 1px solid rgba(255, 255, 255, .2);
+    padding-right: 40px;
+    /* margin-right: ; */
+    flex: 2;
+}
+.right{
+    margin-left: 40px;
+    flex: 4;
+}
+
+.title{
+    font-size: medium;
+    font-weight: 600;
+    color: #333;
+    margin: 16px 0px;
+}
+
+.TagPage{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.tag{
+    display: flex;
+    flex-direction: column;
+    margin-right: 16px;
+}
+
+.TagIcon{
+    width: 80px;
+    height: 80px;
+}
+
+
+/* 布局 */
+.flex-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.flex-raw{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.margin8{
+    margin: 24px 8px;
+}
+a{
+    text-decoration: none;
+    color: #eee;
+}
+
+
+/* todo清单 */
+
+.flex{
+    display: flex;
+}
+.AddTodo{
+   width: 100%;
+   height: 24px;
+   outline: none;
+   border: 0px;
+   border-radius: 4px 0px 0px 4px ;
+   color: #333;
+   box-shadow: 0px 10px 16px rgba(0,0,0,.1);
+}
+.AddButton{
+    background-color: #fff;
+   outline: none;
+   border: 0px;
+   border-radius: 0px 4px 4px 0px ;
+   color: #666;
+   padding: 4px 8px;
+   box-shadow: 0px 10px 16px rgba(0,0,0,.1);
+    /* position: relative;
+    right:-214px;
+    top: -26px; */
+}
+.TodoList{
+    font-size: 16px;
+    font-weight: 200;
+    color: #eee;
+}
+.flex-bt{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 16px;
+}
+
+
+/* 标签页 */
+.TagBox{
+    width: 80px;
+    height: 80px;
+    /* display: flex;
+    justify-content: center; */
+    background-color: rgba(255, 255, 255, .2);
+    border-radius: 8px;
+}
+.PageIcon{
+    width:60% ;
+    height: 60%;
+    margin: 16px;
+}
+.PageName{
+    color: #eee;
+    font-size: 14px;
+    text-align: center;
+    font-weight: 100;
+    margin-top: 8px;
+}

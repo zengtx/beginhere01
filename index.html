@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/reset.css">
+    <!-- 定义网站tab页小图标 -->
+    <link rel="shortcut icon" href="images/zengtongxue.ico" type="image/x-icon" />
+    <!-- 引入js文件 -->
+
+    <title>从这里开始</title>
+</head>
+<body>
+            <!-- 上边搜索区 -->
+    <div class="top flex-column">
+        <div class="logo">
+            <img src="#" alt="">BeginHere
+        </div>
+        <div class="flex">
+            <!-- <input class="search" type="输入要查询的内容"> -->
+            <!-- 调用百度搜搜 -->
+            <form action="https://www.baidu.com/s">
+                <!-- <input class="search" type="输入要查询的内容" value="输入要搜索的内容" name=wd> -->
+                <input class="search" type="输入要查询的内容" placeholder="添加一个任务，回车确认"  name=wd>
+            </form>
+            <button class="SearchButton">搜索</button>
+        </div>
+    </div>
+
+    <!-- 下边 -->
+    <div class="bottom flex-raw glass">
+        <div id="qingDan" class="left" onload="qingDan()">
+            <!-- onload是当leftdiv加载的时候 调用的函数 -->
+            <h2 class="title">TODO</h2>
+            <div class="flex">
+                <input id="shuRuKuang" class="AddTodo" type="text">
+                <button id="anNiu" class="AddButton" onclick="toDo()">+</button>
+            </div>
+
+            <!-- 一个列表 -->
+            <!-- <div id="toDoList" class="toDoList flex-bt">
+                <div id="toDoItem">
+                    <p id="toDoThing">123</p>
+                </div>
+                <div>
+                    <input id="done" class="done" >
+                </div>
+
+                <div>
+                    <p id="toDoThing">123</p>
+                </div>
+                <div>
+                    <input id="done" class="done" >
+                </div>
+            </div> -->
+                     
+        </div>
+        <div class="line"></div>
+        <div class="right">
+            <h2 class="title">GOTO</h2>
+            <div class="TagPage">
+                <!-- 标签页logo或封面 -->
+                <div class="tag">
+                    <div class="TagBox">
+                        <a href="https://unsplash.com/"><img class="PageIcon" src="/images/unsplush.png" alt="unsplash" class="TagIcon"></a>
+                    </div>
+                    <a class="PageName" href="https://unsplash.com/">unsplush</a>
+                    <!-- <button>…</button> -->
+                </div>
+                <!-- 第二个标签 -->
+                <div class="tag">
+                    <div class="TagBox">
+                        <a href="http://www.ico51.cn/"><img class="PageIcon" src="/images/icon51.png" alt="unsplash" class="TagIcon"></a>
+                    </div>
+                    <a class="PageName" href="https://unsplash.com/">icon51</a>
+                    <!-- <button>…</button> -->
+                </div>
+
+                <div class="AddTag">
+                    <div class="TagBox">
+                       <a href="/pages/update.html"><img src="/images/addTag.png" alt="添加标签" class="TagIcon"></a>
+                        
+                    </div>
+                    <p class="PageName">功能待更新</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer flex-raw">
+        <a class="margin8" href="/pages/update.html">更新计划</a>
+        <a class="margin8" href="#">关于</a>
+        <a class="margin8" href="#">鸣谢</a>
+    </div>
+
+    <script src="/js/index.js"></script>
+</body>
+</html>
