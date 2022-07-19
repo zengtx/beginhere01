@@ -13,7 +13,7 @@ body{
    /* 固定背景图片不随鼠标滚动下滑 */
    background-attachment: fixed;
    /* background-position: center; */
-   background-size: 100vw;
+   background-size: cover;
    /* overflow: hidden; */
 
 }
