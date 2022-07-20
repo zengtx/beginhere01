@@ -37,6 +37,7 @@ function toDo(){
 
     let toDoItem = window.document.createElement('div');//创建一个toDoItem的div标签
     toDoList.appendChild(toDoItem);//将toDoItem放在toDoList中
+    toDoItem.id=("toDoItem");
 
     let toDoThing = window.document.createElement('p');//声明一个toDoThing，值为创建一个p标签
     toDoItem.appendChild(toDoThing);//将p标签放在toDoItem的div中
@@ -46,9 +47,21 @@ function toDo(){
 
     let done = window.document.createElement('input');//声明一个done，创建“input”标签
     done.setAttribute("type","checkbox"); //将input设置type属性设置为checkbox类型
-    
+    done.id = "done";
+    done.oneclick = "check()";
+
     check.appendChild(done);//将done放在父级check中
     toDoThing.innerText = neiRong;
+  }
+}
+
+function check(){
+  let checkBox = window.document.getElementById("done");
+  let check = window.document.getElementById('done');//声明一个toDoItem的div标签
+  let toDoItem2 = window.document.getElementById("toDoItem");
+
+  if(checkBox.checked = true){
+    toDoItem2.remove();
   }
 }
 
