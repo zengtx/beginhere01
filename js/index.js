@@ -24,8 +24,8 @@ function toDo(){
   
   //当内容为空时，在输入框中显示“输入待办事项”
  
-  if(daiBan){
-    shuRuKuang.value == 0;
+  if(shuRuKuang.value.length == 0){
+  
     alert("输入待办事项")
     
   }else{
