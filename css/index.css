@@ -27,6 +27,7 @@ body{
 .date{
     color: #eee;
     margin: 8px;
+    text-align: center;
 }
 .top{
     align-items: center;
