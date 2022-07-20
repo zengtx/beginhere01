@@ -19,13 +19,14 @@ body{
 }
 
 .logo{
-    margin: 24px;
+    margin: 16px;
     font-size: 3em;
     font-weight: 600;
     color: #eee;
 }
 .date{
     color: #eee;
+    margin: 8px;
 }
 .top{
     align-items: center;
