@@ -18,12 +18,13 @@ body{
 
 }
 
-
-
 .logo{
     margin: 24px;
     font-size: 3em;
     font-weight: 600;
+    color: #eee;
+}
+.date{
     color: #eee;
 }
 .top{
