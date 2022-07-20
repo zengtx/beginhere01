@@ -10,23 +10,25 @@
 // }
 
 //定义一个daiBan 值为布尔
-let daiBan = false;
-
+// let daiBan = false;
+let date = window.document.getElementById('date');
+date.innerHTML = new Date();
 
 //定义一个toDo函数，当按钮被点击时调用
 function toDo(){
   let anNiu = window.document.getElementById('anNiu');
   let shuRuKuang = window.document.getElementById('shuRuKuang');
+  let neiRong = shuRuKuang.value;
   let toDoList = window.document.getElementById('toDoList');//声明一个toDoList获取到div标签
   let toDoThing = window.document.getElementById('toDoThing');  
   
   //当内容为空时，在输入框中显示“输入待办事项”
  
   if(daiBan){
-    daiBan = false;
-    shuRuKuang.value = "输入待办事项";
+    shuRuKuang.value == 0;
+    alert("输入待办事项")
+    
   }else{
-    daiBan = true;
     
     let toDoList = window.document.createElement('div');//创建一个toDoList的div标签
     // toDoList.class = toDoList flex-bt;
@@ -43,12 +45,9 @@ function toDo(){
     toDoList.appendChild(check);//将check的div放在toDoList中
 
     let done = window.document.createElement('input');//声明一个done，创建“input”标签
-    // done.style = "checkbox";//将input改成checkbox类型
-    // done.styleName = "checkbox";
-    // done.className.style = "radio";
-    done.setAttribute("type","checkbox"); //将input改成checkbox类型
+    done.setAttribute("type","checkbox"); //将input设置type属性设置为checkbox类型
+    
     check.appendChild(done);//将done放在父级check中
-    let neiRong = shuRuKuang.value;
     toDoThing.innerText = neiRong;
   }
 }

@@ -13,7 +13,16 @@
     <title>从这里开始</title>
 </head>
 <body>
-            <!-- 上边搜索区 -->
+    <!-- 时间+头像 -->
+    <div class="bar flex-bt">
+        <div class="zhanWeiZhi"></div>
+        <div id="date" class="date">123</div>
+        <div class="zhanWeiZhi"></div>
+        <!-- <div class="touXiang">
+            <img src="#" alt="用户头像">
+        </div> -->
+    </div>
+        <!-- 上边搜索区 -->
     <div class="top flex-column">
         <div class="logo">
             <img src="#" alt="">BeginHere
@@ -35,7 +44,7 @@
             <!-- onload是当leftdiv加载的时候 调用的函数 -->
             <h2 class="title">TODO</h2>
             <div class="flex">
-                <input id="shuRuKuang" class="AddTodo" type="text">
+                <input id="shuRuKuang" class="AddTodo" type="text" placeholder="输入待办事项点击加号添加">
                 <button id="anNiu" class="AddButton" onclick="toDo()">+</button>
             </div>
 
