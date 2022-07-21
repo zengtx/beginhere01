@@ -14,14 +14,14 @@
 let date = window.document.getElementById('date');
 date.innerHTML = new Date();
 
-let anNiu = window.document.getElementById('anNiu');
-let shuRuKuang = window.document.getElementById('shuRuKuang');
-let neiRong = shuRuKuang.value;
-let toDoList = window.document.getElementById('toDoList');//声明一个toDoList获取到div标签
-let toDoThing = window.document.getElementById('toDoThing');  
 //定义一个toDo函数，当按钮被点击时调用
 function toDo(){
- 
+  let anNiu = window.document.getElementById('anNiu');
+  let shuRuKuang = window.document.getElementById('shuRuKuang');
+  let neiRong = shuRuKuang.value;
+  let toDoList = window.document.getElementById('toDoList');//声明一个toDoList获取到div标签
+  let toDoThing = window.document.getElementById('toDoThing');  
+  
   //当内容为空时，在输入框中显示“输入待办事项”
  
   if(shuRuKuang.value.length == 0){
